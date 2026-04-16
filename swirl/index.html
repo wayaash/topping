@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<title> heyyy! its me yash aka yashuuu </title>
+<style>
+    
+    /*ill now add some css variables*/
+    :root {
+        --bg: linear-gradient(to right, #a1e7fdd2, #c2e9fb);
+        --card: white;
+        --text: #0a1010;
+    }
+/* body should look cooler now hhahahahahahaha*/
+body {
+    margin: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    }
+
+    .header {
+        display: flexbox;
+        padding: 15px;
+        background: rgb(7, 185, 194);
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .card {
+        background: var(--card);
+        padding: 15px;
+        border-radius: 10px;
+     }
+
+     /* now its time for some animations*/
+     @keyframes bounce {
+        0% { transform:translateY(0);}
+        50%{transform: translateY(-8px);}
+        100%{transform: translateY(0px);}
+    }
+
+    .name{
+        animation: bounce 3s infinite;
+    }
+
+    /* images*/
+    img {
+        width:100%;
+        border-radius: 5px;
+    }
+
+    @media (max-width:800px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+
+        .header{
+             flex-direction: column;
+             align-items: center;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <div><b> WUHAHAHAHAH YASHHH </b></div>
+        <div>Swirl from Hack Club</div>
+     </div>
+
+     <div class="container">
+        <h1 class="name">YASHUUU </h1>
+        <P>come on slack and dm me @yashuuu! just say hiii</P>
+     </div>
+     <div class="grid">
+        <div class="card">
+            <h3> what can i do properly? </h3>
+            <p>TBH, its nothing but i can do broken css,html,js etc. i am also learning frameworks</p>
+        </div>
+            <div class="card">
+                <h3>What i love?</h3>
+                <p>i love gifts :) nvm, i love coding,sports,photography,arts,crochet!!! </p>
+
+            </div>
+            <div class="card">
+                <h3>Image i love (just for requirements)</h3>
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+            </div>
+            
+            <div class="card">
+
+            <h3>MORE ABOUT ME!</h3>
+            <ul>
+                <li>HACK CLUB VIDISHA</li>
+                <li>DAYDREAM JHANSI</li>
+                <li>BUILD GUILD DELHI ORG</li>
+                <li>STATE LEVEL PLAYER</li>
+            </ul>
+            <p>check this second page which will fulfill requirements <a href="page2.html">CLICK CLICK CLICK MEEEEE</a></p>
+            <button onclick="alert('you learned how to click a button wow')">Click me AGAINNNNNN</button>
+            </div>
+        </body>
+        
+    </html>
